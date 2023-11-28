@@ -1,4 +1,4 @@
-import checkResault from './CheckResult'
+import checkResult from './CheckResult'
 
 const playTurn = (activePlayer, setActivePlayer, fieldOpen, setFieldOpen, key, gameResult, setGameResult) => {
   if (gameResult) return
@@ -8,7 +8,7 @@ const playTurn = (activePlayer, setActivePlayer, fieldOpen, setFieldOpen, key, g
     player: activePlayer
   }
   setFieldOpen(fieldOpen)
-  checkResault(fieldOpen, setGameResult, activePlayer)
+  checkResult(fieldOpen, setGameResult, activePlayer)
   setActivePlayer(activePlayer === 'PlayerOne' ? 'PlayerTwo' : 'PlayerOne')
 }
 

@@ -19,6 +19,7 @@
 
 .ActivePlayer {
   align-self: center;
+  height: 4rem;
 }
 
 .field {
