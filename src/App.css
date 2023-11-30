@@ -2,15 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
+  height: 100vh;
 }
 
 .playGrid {
   align-self: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
   display: grid;
-  width: 36rem;
-  height: 27rem;
+  width: 60%;
+  height: 60%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 0px;
@@ -18,8 +20,20 @@
 }
 
 .ActivePlayer {
+  display: flex;
+  justify-content: center;
   align-self: center;
-  height: 4rem;
+ /*  height: 15%; */
+  width: 10%;
+  margin-bottom: 0.5rem;
+  border-bottom: 1.5px solid black;
+}
+
+.display{
+  padding-bottom: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .field {
@@ -28,8 +42,6 @@
   align-items: center;
   padding: 0;
   margin: 0;
-  width: 12rem;
-  height: 9rem;
 }
 
 .field:nth-child(1) {
